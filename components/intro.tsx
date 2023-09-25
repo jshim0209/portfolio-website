@@ -6,9 +6,8 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-
+import profilePic from "@/public/profile_pic_2.jpg";
 const Intro = () => {
-  //   const { ref } = useSectionInView("Home", 0.5);
   return (
     <section id="home" className="mb-28 max-w-[50rem] sm:mb-0">
       <div className="flex items-center justify-center">
@@ -19,13 +18,13 @@ const Intro = () => {
             transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
-              src="https://ntvb.tmsimg.com/assets/assets/57282_v9_bc.jpg?w=270&h=360"
+              src={profilePic}
               alt="Ryan Reynolds"
               width="192"
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover 
+              className="h-36 w-36 rounded-full object-cover 
             border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
@@ -44,7 +43,7 @@ const Intro = () => {
           </motion.span>
         </div>
       </div>
-      <motion.p
+      <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium 
       !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
@@ -53,9 +52,9 @@ const Intro = () => {
         <span className="font-bold">Hello, I'm Jiwon.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">1 year</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
-      </motion.p>
+        building <span className="italic">sites and applications</span>. My
+        focus is <span className="underline">Java & React</span>.
+      </motion.h1>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
